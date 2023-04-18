@@ -33,6 +33,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.5.2
+        
       - name: build
         run: |
           npm i
